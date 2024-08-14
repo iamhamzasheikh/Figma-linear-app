@@ -1,1 +1,1 @@
-# Figma-linear-app
+# linear-purple-app

@@ -1,0 +1,81 @@
+.container {
+    width: 80%;
+    height: 100vh;
+    border: 2px solid black;
+    margin: 0 auto; 
+}
+.bg-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.bg-image > ion-img {
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    background-position: center;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent)
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+}
+.profile-img > ion-img {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+.profile-name {
+    width: 100%;
+    height: 50px;
+    border: 2px solid transparent;
+    position: absolute;
+    text-align: center;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.intro {
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.follow-details {
+    width: 80%;
+    height: 50px;
+    border: 2px solid transparent;
+    position: absolute;
+}
+.follow-details > ion-row {
+    text-align: center;
+}
+.follow-details > ion-row > ion-col > p {
+    font-size: 20px;
+}
+.follow-details-pro {
+    width: 80%;
+    height: 30px;
+    border: 2px solid transparent;
+    position: absolute;
+}
+.follow-details-pro > ion-row {
+    margin-top: 10px;
+    text-align: center;
+}
+.follow-details-pro > .ion-col > p {
+    font-weight: 700;
+}

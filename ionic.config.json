@@ -1,0 +1,7 @@
+{
+  "name": "linear-purple",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
