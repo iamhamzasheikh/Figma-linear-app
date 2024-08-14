@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+    width: 100%;
     height: 100vh;
     border: 2px solid black;
     margin: 0 auto; 
@@ -40,42 +40,54 @@
     border: 2px solid transparent;
     position: absolute;
     text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: table;
+}
+.profile-name > h4 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    text-align: center;
     top: 28%;
     left: 50%;
     transform: translate(-50% , -50%);
 }
-.intro {
-    width: 80%;
-    height: 50px;
-    position: absolute;
+.intro > p {
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50% , -50%);
 }
 
 .follow-details {
-    width: 80%;
-    height: 50px;
-    border: 2px solid transparent;
-    position: absolute;
-}
-.follow-details > ion-row {
-    text-align: center;
-}
-.follow-details > ion-row > ion-col > p {
-    font-size: 20px;
-}
-.follow-details-pro {
-    width: 80%;
+    width: 100%;
     height: 30px;
-    border: 2px solid transparent;
     position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: table;
 }
-.follow-details-pro > ion-row {
-    margin-top: 10px;
-    text-align: center;
+.follow-details > div {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0 auto;
 }
-.follow-details-pro > .ion-col > p {
-    font-weight: 700;
+.follow-details > div > p {
+    margin: 0 auto;
+    font-size: 25px;
 }
