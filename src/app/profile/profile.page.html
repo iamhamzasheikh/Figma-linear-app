@@ -16,29 +16,93 @@
 
     </div>
 
-    <div class="stats-container">
-      <div class="stat-item">
-        <div class="stat-value">256</div>
-        <div class="stat-label">Following</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-value">22.4k</div>
-        <div class="stat-label">Followers</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-value">10k</div>
-        <div class="stat-label">Likes</div>
-      </div>
-    </div>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col size="4" size-md="4">
+          <div class="stat-item">
+            <div class="stat-value">256</div>
+            <div class="stat-label">Following</div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="stat-item">
+            <div class="stat-value">22.4k</div>
+            <div class="stat-label">Followers</div>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div class="stat-item">
+            <div class="stat-value">10k</div>
+            <div class="stat-label">Likes</div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="btn-container">
+      <ion-row style="border: 2px solid black;">
+        <ion-col size="1" size-md="2" size-lg="3"></ion-col>
+        <ion-col size="5" size-md="4" size-lg="3" style="border: 2px solid red;">
+          <button class="custom-button follow-button">Follow</button>
+        </ion-col>
+        <ion-col size="5" size-md="4" size-lg="3" style="border: 2px solid orangered;">
+          <button class="custom-button message-button">Message</button>
+        </ion-col>
+        <ion-col size="1" size-md="2" size-lg="3"></ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="bottom-nav">
+      <ion-row>
+        <ion-col style="border: 2px solid orangered;" size="3" size-md="3" size-lg="3" class="nav-item">
+          <ion-button fill="clear">Photo</ion-button>
+        </ion-col>
+        <ion-col style="border: 2px solid orangered;" size="3" size-md="3" size-lg="3" class="nav-item">
+          <ion-button fill="clear">Video</ion-button>
+        </ion-col>
+        <ion-col style="border: 2px solid orangered;" size="3" size-md="3" size-lg="3" class="nav-item">
+          <ion-button fill="clear">About</ion-button>
+        </ion-col>
+        <ion-col style="border: 2px solid orangered;" size="3" size-md="3" size-lg="3" class="nav-item">
+          <ion-button fill="clear">Favorite</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+<!-- bottom-image-section -->
+    <ion-grid class="image-grid">
+      <ion-row>
+        <ion-col size="6" size-md="6" size-lg="6">
+          <div class="image-container">
+            <ion-img src="/assets/images/headphones.jpg" alt="Image 1"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col size="6" size-md="6" size-lg="6">
+          <div class="image-container">
+            <ion-img style="height: 500px;" src="/assets/images/headphones.jpg" alt="Image 2"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col size="6" size-md="6" size-lg="6">
+          <div class="image-container">
+            <ion-img src="/assets/images/headphones.jpg" alt="Image 3"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col size="6" size-md="6" size-lg="6">
+          <div class="image-container">
+            <ion-img src="/assets/images/headphones.jpg" alt="Image 4"></ion-img>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+ 
+
+
+
+
   </div>
-
-  <div class="btn-container">
-    <button class="btn-1">Follow</button>
-    <button class="btn-2">Message</button>
-  </div>
-
-
-
-
-
 </ion-content>
