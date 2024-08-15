@@ -2,92 +2,148 @@
     width: 100%;
     height: 100vh;
     border: 2px solid black;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 .bg-image {
     width: 100%;
     height: 250px;
     overflow: hidden;
 }
-.bg-image > ion-img {
-    width:100%;
+
+.bg-image>ion-img {
+    width: 100%;
     height: 250px;
     object-fit: cover;
     background-position: center;
     -webkit-mask-image: linear-gradient(black, transparent);
     mask-image: linear-gradient(black, transparent)
 }
+
 .profile-img {
     width: 120px;
     height: 120px;
     position: absolute;
     top: 17%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 }
-.profile-img > ion-img {
+
+.profile-img>ion-img {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 1px solid #000;
 }
+
+.profile-header {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    top: calc(17% + 60px);
+    /* Position it below the polygon image */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .profile-name {
-    width: 100%;
-    height: 50px;
-    border: 2px solid transparent;
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    display: table;
-}
-.profile-name > h4 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.intro {
-    display: table;
-    width: 100%;
-    height: 25px;
-    position: absolute;
-    text-align: center;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+.profile-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0 0;
+    padding: 0;
 }
-.intro > p {
-    display: table-cell;
-    vertical-align: middle;
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.stat-item {
     text-align: center;
 }
 
-.follow-details {
-    width: 100%;
-    height: 30px;
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
 }
-.follow-details > div {
-    width: 50%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    margin: 0 auto;
+
+.btn-1,
+.btn-2 {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
-.follow-details > div > p {
-    margin: 0 auto;
-    font-size: 25px;
+
+.btn-1 {
+    background: linear-gradient(45deg, #D5533C, #E49E9A);
+}
+
+.btn-2 {
+    background: linear-gradient(45deg, #D991C5, #7EC4F3);
+}
+
+
+
+
+
+@media (max-width: 375px) {
+
+    .btn-container {
+        flex-direction: column;
+        /* Stack the buttons vertically */
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 90%;
+        /* Make buttons wider for better visibility */
+        margin-bottom: 10px;
+        /* Add space between buttons */
+    }
+
+    .container {
+        padding-bottom: 100px;
+        /* Increase padding for smaller screens */
+    }
 }
