@@ -116,22 +116,22 @@
   .image-grid {
     padding: 10px;
   }
-
+  
   .image-container {
     width: 100%;
     padding: 10px;
     border-radius: 15px;
     overflow: hidden;
+    margin-bottom: 20px;
   }
-
-  ion-img {
+  
+  .image-container ion-img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
+    height: 100%;
     object-fit: cover;
+    border-radius: 15px;
     -webkit-mask-image: linear-gradient(black, transparent);
-    mask-image: linear-gradient(black, transparent)
-
+    mask-image: linear-gradient(black, transparent);
   }
 
   @media (min-width: 768px) and (max-width: 1080px){
@@ -168,9 +168,6 @@
       width: 100%;
       padding: 14px 0;
     }
-    .bottom-nav > ion-button {
-      font-size: 12px !important;
-    }
   }
 
   @media (min-width: 425px) {
@@ -190,6 +187,27 @@
       width: 100%;
       padding: 14px 0;
     }
+     /* Making image grid more responsive */
+  .image-grid ion-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .image-container {
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+  
+  .image-container ion-img {
+    height: auto !important;
+  }
+  }
+
+  @media (max-width: 425px) {
+    .nav-item ion-button {
+      font-size: 12px;
+      padding: 5px;
+    }
   }
 
 @media (min-width: 220px) {
@@ -208,5 +226,74 @@
   .custom-button {
     width: 100%;
     padding: 12px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-item ion-button {
+    font-size: 10px;
+    padding: 3px;
+    font-weight: bolder;
+  }
+}
+
+// ---------------------
+
+@media (min-width: 1081px) {
+  .image-container {
+    height: 300px;
+  }
+  .image-container:nth-child(2),
+  .image-container:nth-child(3) {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .image-container {
+    height: 250px;
+  }
+  .image-container:nth-child(2),
+  .image-container:nth-child(3) {
+    height: 300px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .image-container {
+    height: 200px;
+  }
+  .image-container:nth-child(2),
+  .image-container:nth-child(3) {
+    height: 240px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 575px) {
+  .image-grid ion-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .image-container {
+    height: 250px;
+  }
+  .image-container:nth-child(2),
+  .image-container:nth-child(3) {
+    height: 280px;
+  }
+}
+
+@media (max-width: 425px) {
+  .image-grid ion-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .image-container {
+    height: 200px;
+    margin-top: 0 !important;
+  }
+  .image-container:nth-child(2),
+  .image-container:nth-child(3) {
+    height: 220px;
   }
 }
