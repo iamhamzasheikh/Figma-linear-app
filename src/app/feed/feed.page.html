@@ -1,5 +1,6 @@
 <ion-content [fullscreen]="true">
 
+ <div class="header" style="margin: 0 auto; width: 90%;">
   <ion-header class="ion-no-border">
     <ion-toolbar>
       <ion-title>
@@ -25,57 +26,82 @@
     </ion-toolbar>
   </ion-header>
 
-  
+ </div>
 
-  <ion-content>
+<!-- Hexagon-profiles -->
+  <div class="grid-container">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+          <div class="hexagon">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2"> <img src="/assets/images/person-fourth.jpg"> </div>
+            </div>
+          </div>
+          <p>You</p>
+        </ion-col>
 
-    <div class="grid-container">
-      <ion-grid>
-        <ion-row>
-          <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
-            <div class="hexagon">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-image: url('path-to-your-image1.jpg');"></div>
-              </div>
+        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+          <div class="hexagon">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2"><img src="/assets/images/person-fourth.jpg"></div>
             </div>
-            <p>You</p>
-          </ion-col>
-    
-          <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
-            <div class="hexagon">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-image: url('path-to-your-image2.jpg');"></div>
-              </div>
+          </div>
+          <p>Genre</p>
+        </ion-col>
+
+        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+          <div class="hexagon">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2"><img src="/assets/images/person-fourth.jpg"></div>
             </div>
-            <p>Genre</p>
-          </ion-col>
-    
-          <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
-            <div class="hexagon">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-image: url('path-to-your-image3.jpg');"></div>
-              </div>
+          </div>
+          <p>Gym</p>
+        </ion-col>
+
+        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+          <div class="hexagon">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2"><img src="/assets/images/person-fourth.jpg"></div>
             </div>
-            <p>Gym</p>
-          </ion-col>
-    
-          <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
-            <div class="hexagon">
-              <div class="hexagon-in1">
-                <div class="hexagon-in2" style="background-image: url('path-to-your-image4.jpg');"></div>
-              </div>
-            </div>
-            <p>Health</p>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+          </div>
+          <p>Health</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <!-- profile-feeds -->
+
+  <div class="profile-feed">
+    <ion-item lines="none" class="user-profile-item">
+      <ion-avatar slot="start">
+        <img src="/assets/images/person-two.jpg" alt="User profile picture">
+      </ion-avatar>
+      <ion-label>
+        <h2>Hamza Sheikh</h2>
+        <p>hamza.com</p>
+      </ion-label>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </div>
+
+  <!-- feed-picture-card -->
+
+  <div class="feed-img-card">
+    <div class="feed-img-inner-card">
+     <img src="/assets/images/three-headphones.webp" alt="" srcset="">
     </div>
-    
+  </div>
 
 
 
-  </ion-content>
 
 
-  
+
+
+
 </ion-content>
