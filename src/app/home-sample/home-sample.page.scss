@@ -1,0 +1,313 @@
+.container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #e945e1, pink, skyblue, #e945e1);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .brand-name {
+    margin-top: 30px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  .transparent-box {
+    width: 22%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .transparent-box h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-align: start;
+    margin-left: 15px;
+    margin-top: 100px;
+  }
+  
+  .btn-space {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 22%;
+    height: 50px;
+    position: absolute;
+  }
+  
+  .btn-space>div {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+  }
+  
+  .btn-space>div>button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn-1>button {
+    background-color: transparent;
+    border: 2px solid white !important;
+    border-radius: 50px;
+  }
+  
+  .btn-2>button {
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(83, 240, 83), lightpink, rgb(87, 202, 240)) !important;
+  }
+  
+  .person-one {
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 57%;
+  
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+  
+  .person-two {
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 17%;
+    left: 38%;
+  }
+  
+  .person-three {
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 52%;
+  }
+  
+  .person-fourth {
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 39%;
+  }
+  
+  .person-fifth {
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 68%;
+    left: 57%;
+  }
+  
+  .img-person {
+    width: 60px;
+    height: 60px;
+  }
+  
+  
+  // -----------------CSS for Mobile Screen -------------------
+  
+  @media (min-width: 768px) and (max-width: 1080px) {
+    .brand-name {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+  
+    .transparent-box {
+      width: 40% !important;
+      height: 450px;
+    }
+  
+    .btn-space {
+      width: 50%;
+      top: 90%;
+    }
+
+    .person-one {
+        top: 5%;
+        left: 60%;
+    }
+    .person-two {
+        top: 18%;
+        left: 30%;
+    }
+    .person-fourth {
+        top: 73%;
+        left: 30%;
+    }
+    .person-fifth {
+        top: 72%;
+        left: 63%;
+    }
+  
+  }
+  
+  @media (width <=767px) {
+    .brand-name {
+      font-size: 1.7rem;
+    }
+  
+    .transparent-box {
+      width: 60%;
+    }
+  
+    .btn-space {
+      width: 60%;
+    }
+
+    .person-one {
+        top: 7%;
+        left: 65%;
+    }
+    .person-two {
+        top: 22%;
+        left: 20%;
+    }
+    .person-three {
+        top: 30%;
+        left: 60%;
+    }
+    .person-fourth {
+        top: 70%;
+        left: 21%;
+    }
+    .person-fifth {
+        top: 68%;
+        left: 72%;
+    }
+
+  }
+  
+  @media (width <=640px) {
+    .transparent-box {
+      width: 70%;
+    }
+  
+    .btn-space {
+      width: 60%;
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .btn-space>div {
+      width: 100%;
+    }
+  
+    .btn-space>div>button {
+      padding: 10px;
+    }
+
+    .person-one {
+        top: 7%;
+        left: 68%;
+    }
+    .person-two {
+        top: 22%;
+        left: 15%;
+    }
+    .person-three {
+        top: 30%;
+        left: 60%;
+    }
+    .person-fourth {
+        top: 70%;
+        left: 15%;
+    }
+    .person-fifth {
+        top: 68%;
+        left: 75%;
+    }
+  }
+  
+  @media (width <=525px) {
+    .transparent-box {
+      width: 80%;
+      height: 450px;
+    }
+  
+    .btn-space {
+      width: 70%;
+    }
+    .person-one {
+        top: 7%;
+        left: 70%;
+    }
+    .person-two {
+        top: 18%;
+        left: 12%;
+    }
+    .person-three {
+        top: 25%;
+        left: 60%;
+    }
+    .person-fourth {
+        top: 73%;
+        left: 12%;
+    }
+    .person-fifth {
+        top: 70%;
+        left: 78%;
+    }
+
+
+
+
+
+  }
+  
+  @media (width <=320px) {
+    .brand-name {
+      font-size: 1.5rem;
+      margin-top: 50px;
+    }
+  
+    .transparent-box {
+      width: 90%;
+      height: 400px;
+    }
+  
+    .btn-space {
+      width: 85%;
+    }
+  }
+  
+  @media (width <=245px) {
+    .transparent-box h1 {
+      font-size: 30px;
+      font-weight: 500px;
+    }
+  }

@@ -32,7 +32,7 @@
   <div class="grid-container">
     <ion-grid>
       <ion-row>
-        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+        <ion-col class="grid-col" size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
           <div class="hexagon">
             <div class="hexagon-in1">
               <div class="hexagon-in2"> <img src="/assets/images/person-fourth.jpg"> </div>
@@ -41,7 +41,7 @@
           <p>You</p>
         </ion-col>
 
-        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+        <ion-col class="grid-col" size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
           <div class="hexagon">
             <div class="hexagon-in1">
               <div class="hexagon-in2"><img src="/assets/images/person-fourth.jpg"></div>
@@ -50,7 +50,7 @@
           <p>Genre</p>
         </ion-col>
 
-        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+        <ion-col class="grid-col" size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
           <div class="hexagon">
             <div class="hexagon-in1">
               <div class="hexagon-in2"><img src="/assets/images/person-fourth.jpg"></div>
@@ -59,7 +59,7 @@
           <p>Gym</p>
         </ion-col>
 
-        <ion-col size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
+        <ion-col class="grid-col" size="3" sizeSm="3" sizeMd="2" sizeLg="2" sizeXl="2">
           <div class="hexagon">
             <div class="hexagon-in1">
               <div class="hexagon-in2"><img src="/assets/images/person-fourth.jpg"></div>
@@ -97,6 +97,29 @@
     </div>
   </div>
 
+  <!-- like-share-btn -->
+
+  <ion-grid>
+    <ion-row class="social-stats">
+      <ion-col size="3" class="stat-item">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span>22k</span>
+      </ion-col>
+      <ion-col size="3" class="stat-item">
+        <ion-icon name="chatbubble-outline"></ion-icon>
+        <span>10k</span>
+      </ion-col>
+      <ion-col size="3" class="stat-item">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <span>5k</span>
+      </ion-col>
+      <ion-col size="3" class="stat-item">
+        <ion-icon name="share-social-outline"></ion-icon>
+        <span>1k</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 
   <div class="profile-feed">
     <ion-item lines="none" class="user-profile-item">
@@ -112,7 +135,5 @@
       </ion-button>
     </ion-item>
   </div>
-
-
 
 </ion-content>

@@ -17,6 +17,10 @@ const routes: Routes = [
   },  {
     path: 'feed',
     loadChildren: () => import('./feed/feed.module').then( m => m.FeedPageModule)
+  },
+  {
+    path: 'home-sample',
+    loadChildren: () => import('./home-sample/home-sample.module').then( m => m.HomeSamplePageModule)
   }
 
 

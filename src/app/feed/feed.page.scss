@@ -82,28 +82,31 @@ ion-header {
 
 ion-grid {
   width: 100%;
+
+  ion-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .grid-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
-ion-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-ion-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .hexagon {
   width: 60px;
   height: 69px;
-  /* Adjusted to maintain hexagon shape */
   position: relative;
   overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hexagon-in1 {
@@ -124,10 +127,8 @@ ion-col {
   img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    transform: rotate(60deg);
-    visibility: visible;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -221,16 +222,16 @@ p {
     width: 90%;
     height: auto;
     margin: 10px auto;
-  
+
     div {
       width: 100%;
       height: 500px;
-  
+
       img {
         width: 100%;
         height: 500px;
         border-radius: 10px;
-  
+
       }
     }
   }
@@ -252,16 +253,16 @@ p {
     width: 90%;
     height: auto;
     margin: 10px auto;
-  
+
     div {
       width: 100%;
       height: 400px;
-  
+
       img {
         width: 100%;
         height: 400px;
         border-radius: 10px;
-  
+
       }
     }
   }
@@ -295,16 +296,16 @@ p {
     width: 90%;
     height: auto;
     margin: 10px auto;
-  
+
     div {
       width: 100%;
       height: 300px;
-  
+
       img {
         width: 100%;
         height: 300px;
         border-radius: 10px;
-  
+
       }
     }
   }
@@ -313,3 +314,24 @@ p {
 
 
 
+.social-stats {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.stat-item ion-icon {
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.stat-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
