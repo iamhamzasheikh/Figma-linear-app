@@ -9,30 +9,34 @@
   width: 100%;
   height: 100vh;
 }
+
 .brand-name {
   margin-top: 30px;
   color: white;
   font-size: 1.5rem;
   font-weight: 900;
 }
+
 .transparent-box {
   width: 22%;
-  height: 425px;
+  height: 550px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 50px;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
-  position: absolute; 
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
+
 .transparent-box h1 {
-  font-size: 45px;
+  font-size: 60px;
   font-weight: 700;
   color: white;
   text-align: start;
   margin-left: 15px;
-  margin-top: 70px;
+  margin-top: 125px;
 }
+
 .btn-space {
   position: absolute;
   top: 85%;
@@ -45,13 +49,15 @@
   height: 50px;
   position: absolute;
 }
-.btn-space > div {
+
+.btn-space>div {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 50px;
   width: 120px;
   height: 40px;
 }
-.btn-space > div > button {
+
+.btn-space>div>button {
   width: 100%;
   height: 100%;
   border: none;
@@ -59,34 +65,44 @@
   cursor: pointer;
   text-align: center;
 }
-.btn-1 > button {
+
+.btn-1>button {
   background-color: transparent;
   border: 2px solid white !important;
   border-radius: 50px;
 }
-.btn-2 > button {
+
+.btn-2>button {
   border-radius: 50px;
   background: linear-gradient(to right, rgb(83, 240, 83), lightpink, rgb(87, 202, 240)) !important;
 }
 
 .person-one {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border: 4px solid black;
   border-radius: 50%;
   position: absolute;
-  top: 9%;
-  left: 55%;
+  top: 10%;
+  left: 57%;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 }
+
 .person-two {
   width: 60px;
   height: 60px;
   border: 4px solid black;
   border-radius: 50%;
   position: absolute;
-  top: 16%;
+  top: 17%;
   left: 38%;
 }
+
 .person-three {
   width: 60px;
   height: 60px;
@@ -94,17 +110,19 @@
   border-radius: 50%;
   position: absolute;
   top: 25%;
-  left: 55%;
+  left: 52%;
 }
+
 .person-fourth {
   width: 60px;
   height: 60px;
   border: 4px solid black;
   border-radius: 50%;
   position: absolute;
-  top: 75%;
-  left: 38%;
+  top: 73%;
+  left: 39%;
 }
+
 .person-fifth {
   width: 60px;
   height: 60px;
@@ -112,8 +130,9 @@
   border-radius: 50%;
   position: absolute;
   top: 72%;
-  left: 57%;
+  left: 58%;
 }
+
 .img-person {
   width: 60px;
   height: 60px;
@@ -127,70 +146,81 @@
     font-size: 1.5rem;
     margin-top: 20px;
   }
+
   .transparent-box {
-    width: 40%;
-    height: 500px;
+    width: 80%;
+    height: 550px;
   }
+
   .btn-space {
-    width: 40%;
+    width: 50%;
     top: 90%;
   }
 
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .brand-name {
     font-size: 1.7rem;
   }
-  .transparent-box {
-    width: 50%; 
-  }
 
-  .btn-space {
-    width: 50%;
-  }
-}
-
-@media (width <= 640px) {
   .transparent-box {
     width: 60%;
   }
+
+  .btn-space {
+    width: 60%;
+  }
+}
+
+@media (width <=640px) {
+  .transparent-box {
+    width: 70%;
+  }
+
   .btn-space {
     width: 60%;
     flex-direction: column;
     gap: 15px;
   }
-  .btn-space > div {
+
+  .btn-space>div {
     width: 100%;
   }
-  .btn-space > div > button {
+
+  .btn-space>div>button {
     padding: 10px;
   }
 }
 
-@media (width <= 525px){
+@media (width <=525px) {
   .transparent-box {
-    width: 70%;
+    width: 80%;
+    height: 450px;
   }
+
   .btn-space {
     width: 70%;
   }
 }
 
-@media (width <= 320px) {
+@media (width <=320px) {
   .brand-name {
     font-size: 1.5rem;
     margin-top: 50px;
   }
+
   .transparent-box {
-    width: 85%;
+    width: 90%;
+    height: 400px;
   }
+
   .btn-space {
     width: 85%;
   }
 }
 
-@media (width <= 245px) {
+@media (width <=245px) {
   .transparent-box h1 {
     font-size: 30px;
     font-weight: 500px;
